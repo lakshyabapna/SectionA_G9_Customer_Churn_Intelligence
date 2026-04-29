@@ -21,16 +21,16 @@
 ## 👥 Team Members
 
 | Name | Student ID | Contribution |
-|------|-----------|-------------|
-| **Omkar Hadole** | 24010101252 | ETL & Cleaning, EDA & Analysis |
-| **Mayank Yadav** | 24010100008 | Statistical Analysis, Report Writing |
-| **Sarvjeet Yadav** | 24010102271 | Dataset & Sourcing, EDA & Analysis |
-| **Lakshya Bapna** | 24010101424 | Tableau Dashboard, PPT & Viva |
-| **Debasish Karan** | 24010101175 | Tableau Dashboard, Report Writing |
-| **Aarya Srivastava** | 24010101141 | Dataset & Sourcing, PPT & Viva |
+|---|---|---|
+| Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard |
+| Aarya Srivastava | 2401010008 | EDA & Analysis, Tableau Dashboard |
+| Mayank Yadav | 2401010271 | EDA & Analysis, PPT & Viva |
+| Sarvjeet Yadav | 2401010424 | EDA & Analysis, PPT & Viva |
+| Omkar Hadole | 2401010175 | Tableau Dashboard, PPT & Viva |
+| Debasish Karan | 2401010141 | Statistical Analysis, PPT & Viva |
 
-**Faculty Mentor:** Satyaki Das  
-**Team ID:** Group 9  
+**Faculty Mentor:** Satyaki Das
+**Team ID:** Group 9
 
 ---
 
@@ -41,6 +41,15 @@
 Customer churn is a major concern in the banking sector as it directly impacts revenue and long-term customer value. Banks lose substantial income when customers close accounts and switch to competitors — and the cost of acquiring a replacement customer far exceeds that of retaining an existing one.
 
 This project addresses the challenge of **identifying the key behavioural and financial factors that drive churn**, enabling early intervention before customers leave.
+
+---
+
+## 🎯 Objectives
+
+1. Identify the primary drivers of customer churn through structured exploratory analysis.
+2. Segment customers by risk level to prioritize retention resources.
+3. Analyze the financial behavior patterns of churned vs. retained customers.
+4. Build interactive Tableau dashboards that enable non-technical stakeholders to explore churn trends dynamically.
 
 ---
 
@@ -56,28 +65,28 @@ The project delivered an end-to-end descriptive and diagnostic analytics pipelin
 
 ### 🔑 Key Insights
 
-- 🔴 **Inactive customers** churn at significantly higher rates than their active counterparts.
-- 🟠 **New customers (0–2 year tenure)** represent the highest-risk churn cohort.
-- 🟡 Customers with **declining account balances** show a strong propensity to churn.
-- 🔵 **High-risk customer segments** exhibit disproportionately elevated churn rates across all metrics.
-- Account balance and tenure show the **strongest negative correlations** with churn — higher balance and longer tenure significantly reduce churn likelihood.
+- 🔴 **Inactive customers** churn at rates significantly above the overall average — inactivity is the single most reliable leading indicator of churn.
+- 🟠 **New customers (0–2 year tenure)** have the highest churn probability; the first two years are the critical retention window.
+- 🟡 **Declining account balances** reliably precede customer churn — balance trajectory is an actionable early-warning signal.
+- 🔵 **High-risk segment customers** exhibit disproportionately higher churn rates; risk classification is a valid targeting criterion for retention investment.
+- 🟢 Customers with **both inactive status and low balance** represent a concentrated, immediately actionable churn-risk cluster.
 
 ### ✅ Key Recommendations
 
 | # | Recommendation | Estimated Churn Reduction |
-|---|---------------|--------------------------|
-| 1 | Deploy early engagement campaigns for new customers (0–2 yr) | 10–20% of early-stage churn |
-| 2 | Implement automated balance-decline alerts for proactive outreach | 5–15% of balance-driven churn |
-| 3 | Launch reactivation programs for inactive customers | 8–15% reactivation rate |
+|---|---|---|
+| 1 | Deploy early engagement campaigns for new customers (0–2 yr) with 30/60/90-day onboarding touchpoints | 10–20% of early-stage churn |
+| 2 | Implement automated balance-decline alerts (>20% drop over 60 days) for proactive outreach | 5–15% of balance-driven churn |
+| 3 | Launch reactivation programs for customers inactive for 60+ days | 8–15% reactivation rate |
 | 4 | Develop personalized retention plans for high-risk segments | 15–25% of high-risk churn |
-| 5 | Create occupation-specific financial products to reduce financial stress | Opens new revenue streams |
+| 5 | Create occupation-specific financial products to reduce financial stress-driven exits | 5–10% in targeted segments |
 
 ---
 
 ## 🛠️ Tech Stack & Tools Used
 
 | Category | Tools / Libraries |
-|----------|------------------|
+|---|---|
 | **Language** | Python 3.10+ |
 | **Data Processing** | Pandas, NumPy |
 | **Statistical Analysis** | SciPy (chi-square, point-biserial correlation) |
@@ -86,7 +95,7 @@ The project delivered an end-to-end descriptive and diagnostic analytics pipelin
 | **Notebooks** | Jupyter Notebook |
 | **ETL Pipeline** | Custom Python script (`scripts/etl_pipeline.py`) |
 | **Version Control** | Git & GitHub |
-| **Outlier Handling** | IQR-based winsorization |
+| **Outlier Handling** | IQR-based winsorization (capped at 1st/99th percentile) |
 | **Missing Value Strategy** | Median (numeric) / Mode (categorical) imputation |
 
 ---
@@ -96,8 +105,8 @@ The project delivered an end-to-end descriptive and diagnostic analytics pipelin
 Three interactive dashboards were designed, each serving a distinct business question:
 
 | Dashboard | Business Question | Key Visualizations |
-|-----------|------------------|--------------------|
-| **1. Behavior Analysis** | *Why are customers churning?* | Activity vs. Churn, Tenure vs. Churn, Balance Decline Analysis |
+|---|---|---|
+| **1. Behavior Analysis** | *Why are customers churning?* | Activity vs. Churn, Tenure vs. Churn (cohort), Balance Decline Analysis |
 | **2. Customer Segmentation** | *Who is at risk?* | Risk Segmentation Breakdown, Age Group Heatmap, Occupation Breakdown |
 | **3. Customer Value & Balance** | *What is the financial impact?* | Balance Distribution, Balance Change Analysis, Avg Balance by Segment |
 
@@ -147,7 +156,7 @@ SectionA_G9_Customer_Churn_Intelligence/
 ## 📈 Dataset Overview
 
 | Attribute | Detail |
-|-----------|--------|
+|---|---|
 | **Records** | ~28,000 customer-level rows |
 | **Sector** | Banking & Financial Services |
 | **Target Variable** | `Churn Label` (Binary: 1 = Churned, 0 = Retained) |
@@ -155,15 +164,15 @@ SectionA_G9_Customer_Churn_Intelligence/
 ### Key Features
 
 | Field | Type | Description |
-|-------|------|-------------|
-| `Age` | Numeric | Customer age in years |
-| `Gender` | Categorical | Customer's gender |
-| `Occupation` | Categorical | Reported occupation category |
-| `Tenure (Years)` | Numeric | Years the customer has held an account |
-| `Account Balance` | Numeric | Current or average account balance |
-| `Activity Status` | Categorical | Active / Inactive based on recent transactions |
-| `Risk Segment` | Categorical | Low / Medium / High risk classification |
+|---|---|---|
 | `Churn Label` | Binary | 1 = Churned, 0 = Retained |
+| `Activity Status` | Categorical | Active / Inactive based on recent transactions |
+| `Tenure (Years)` | Numeric | Years the customer has held an account |
+| `Account Balance` | Numeric | Current or average account balance in currency units |
+| `Risk Segment` | Categorical | Customer risk classification (Low / Medium / High) |
+| `Age` | Numeric | Customer age in years |
+| `Occupation` | Categorical | Customer's reported occupation category |
+| `Gender` | Categorical | Customer's gender |
 
 ---
 
@@ -192,19 +201,30 @@ Tableau Dashboards        ← Interactive decision-support tools
 ```
 
 ### Cleaning Steps Applied
+
 - Churn labels standardised to binary integer format (1 = Churned, 0 = Retained)
 - Activity Status values normalised to consistent categorical encoding (Active / Inactive)
+- Date fields converted to datetime format for tenure computation
 - Categorical columns stripped of whitespace and converted to title case
 - Missing values imputed using **median** (numeric) or **mode** (categorical) strategies
-- Rows with missing churn labels were excluded from analysis
+- Rows with missing churn labels were excluded from analysis to preserve integrity
 - Numeric fields (Balance, Age, Tenure) assessed via **IQR-based outlier detection** and capped at 1st/99th percentiles (winsorization)
+
+### Feature Engineering
+
+| Derived Feature | Description |
+|---|---|
+| **Churn Rate** | Proportion of churned customers within each segment or cohort |
+| **Activity Status Flag** | Derived binary field used for segmentation analysis |
+| **Balance Difference** | Delta between opening and closing balance — proxy for financial trajectory |
+| **Tenure Band** | Customers grouped into cohorts: 0–2 yrs, 3–5 yrs, 6–10 yrs, 10+ yrs |
 
 ---
 
 ## 📐 Project Scope
 
 | In Scope | Out of Scope |
-|----------|-------------|
+|---|---|
 | Descriptive & diagnostic analytics | Real-time data pipelines |
 | KPI computation | Live CRM integration |
 | Exploratory Data Analysis (EDA) | ML-based churn prediction models *(future scope)* |
@@ -249,14 +269,16 @@ python scripts/etl_pipeline.py
 
 ## 📋 Contribution Matrix
 
-| Team Member | Dataset & Sourcing | ETL & Cleaning | EDA & Analysis | Statistical Analysis | Tableau Dashboard | Report Writing | PPT & Viva |
-|-------------|:-----------------:|:--------------:|:--------------:|:--------------------:|:-----------------:|:--------------:|:---------:|
-| Omkar Hadole | | ✓ | ✓ | | | | |
-| Mayank Yadav | | | | ✓ | | ✓ | |
-| Sarvjeet Yadav | ✓ | | ✓ | | | | |
-| Lakshya Bapna | | | | | ✓ | | ✓ |
-| Debasish Karan | | | | | ✓ | ✓ | |
-| Aarya Srivastava | ✓ | | | | | | ✓ |
+| Team Member | Dataset & Sourcing | ETL & Cleaning | EDA & Analysis | Statistical Analysis | Tableau Dashboard | PPT & Viva |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| Lakshya Bapna (2401010252) | ✓ | ✓ | | | ✓ | |
+| Aarya Srivastava (2401010008) | | | ✓ | | ✓ | |
+| Mayank Yadav (2401010271) | | | ✓ | | | ✓ |
+| Sarvjeet Yadav (2401010424) | | | ✓ | | | ✓ |
+| Omkar Hadole (2401010175) | | | | | ✓ | ✓ |
+| Debasish Karan (2401010141) | | | | ✓ | | ✓ |
+
+> *Contributions are verifiable through GitHub Insights, PR history, and submitted deliverables.*
 
 ---
 
@@ -268,7 +290,7 @@ This project was developed as part of the **DVA Capstone 2** coursework at **New
 
 <div align="center">
 
-Made with ❤️ by **Group 9 — Section A**  
+Made with ❤️ by **Group 9 — Section A**
 Newton School of Technology · Data Visualization & Analytics · SEM IV
 
 </div>
