@@ -24,7 +24,7 @@
 |---|---|---|---|---|
 | Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard | [Resume](./DVA-focused-Portfolio/Lakshya-Portfolio/Lakshya-Portfolio.md) | [Portfolio](https://lakshyabapna.github.io/DVA-Portfolio/) |
 | Aarya Srivastava | 2401010008 | EDA & Analysis, Tableau Dashboard | [Resume](./DVA-focused-Resume/Aarya-Resume/Aarya_Srivastava_Resume.pdf) | [Portfolio](https://aarya-sr.github.io/Portfolio_DVA/) |
-| Mayank Yadav | 2401010271 | EDA & Analysis, PPT & Viva | — | — |
+| Mayank Yadav | 2401010271 | EDA & Analysis, Statistical Analysis, Tableau Dashboard | [Resume](./DVA-focused-Resume/Mayank_Yadav-Resume/Mayank_Yadav_DVA_Resume.pdf) | [Portfolio](https://mayank-dva.vercel.app) |
 | Sarvjeet Yadav | 2401010424 | EDA & Analysis, PPT & Viva | — | — |
 | Omkar Hadole | 2401010175 | Tableau Dashboard, PPT & Viva | [Resume](./DVA-focused-Resume/Omkar%20Hadole/omkar-hadole_resume.pdf) | [Portfolio](https://omkar-dva-portfolio.vercel.app/) |
 | Debasish Karan | 2401010141 | Statistical Analysis, PPT & Viva | — | — |
@@ -273,7 +273,7 @@ python scripts/etl_pipeline.py
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Lakshya Bapna (2401010252) | ✓ | ✓ | | | ✓ | |
 | Aarya Srivastava (2401010008) | | | ✓ | | ✓ | |
-| Mayank Yadav (2401010271) | | | ✓ | | | ✓ |
+| Mayank Yadav (2401010271) | | | ✓ | ✓ | ✓ | |
 | Sarvjeet Yadav (2401010424) | | | ✓ | | | ✓ |
 | Omkar Hadole (2401010175) | | | | | ✓ | ✓ |
 | Debasish Karan (2401010141) | | | | ✓ | | ✓ |
