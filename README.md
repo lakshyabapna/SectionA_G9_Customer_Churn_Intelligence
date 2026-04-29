@@ -20,14 +20,14 @@
 
 ## 👥 Team Members
 
-| Name | Student ID | Contribution |
-|---|---|---|
-| Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard |
-| Aarya Srivastava | 2401010008 | EDA & Analysis, Tableau Dashboard |
-| Mayank Yadav | 2401010271 | EDA & Analysis, PPT & Viva |
-| Sarvjeet Yadav | 2401010424 | EDA & Analysis, PPT & Viva |
-| Omkar Hadole | 2401010175 | Tableau Dashboard, PPT & Viva |
-| Debasish Karan | 2401010141 | Statistical Analysis, PPT & Viva |
+| Name | Student ID | Contribution | Resume | Portfolio |
+|---|---|---|---|---|
+| Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard | — | — |
+| Aarya Srivastava | 2401010008 | EDA & Analysis, Tableau Dashboard | [📄 Resume](./DVA-focused-Resume/Aarya-Resume/Aarya_Srivastava_Resume.pdf) | [🌐 Portfolio](https://aarya-sr.github.io/Portfolio_DVA/) |
+| Mayank Yadav | 2401010271 | EDA & Analysis, PPT & Viva | — | — |
+| Sarvjeet Yadav | 2401010424 | EDA & Analysis, PPT & Viva | — | — |
+| Omkar Hadole | 2401010175 | Tableau Dashboard, PPT & Viva | — | — |
+| Debasish Karan | 2401010141 | Statistical Analysis, PPT & Viva | — | — |
 
 **Faculty Mentor:** Satyaki Das
 **Team ID:** Group 9
