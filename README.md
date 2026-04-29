@@ -22,7 +22,7 @@
 
 | Name | Student ID | Contribution | Resume | Portfolio |
 |---|---|---|---|---|
-| Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard | — | — |
+| Lakshya Bapna | 2401010252 | Dataset Sourcing, ETL & Cleaning, Tableau Dashboard | [Resume](./DVA-focused-Portfolio/Lakshya-Portfolio/Lakshya-Portfolio.md) | [Portfolio](https://lakshyabapna.github.io/DVA-Portfolio/) |
 | Aarya Srivastava | 2401010008 | EDA & Analysis, Tableau Dashboard | [Resume](./DVA-focused-Resume/Aarya-Resume/Aarya_Srivastava_Resume.pdf) | [Portfolio](https://aarya-sr.github.io/Portfolio_DVA/) |
 | Mayank Yadav | 2401010271 | EDA & Analysis, PPT & Viva | — | — |
 | Sarvjeet Yadav | 2401010424 | EDA & Analysis, PPT & Viva | — | — |
