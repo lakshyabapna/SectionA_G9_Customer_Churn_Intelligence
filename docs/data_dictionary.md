@@ -66,16 +66,16 @@ The following features were created during preprocessing and feature engineering
 - **customer_tenure_years**  
   → Derived from vintage (converted from days to years)
 
-- **balance_diff** *(if used in your project)*  
+- **balance_diff** **  
   → Difference between current and previous balance to capture financial trend
 
-- **is_active** *(if used)*  
+- **is_active** **  
   → Derived based on recent transaction activity
 
-- **age_group** *(if used)*  
+- **age_group** **  
   → Categorized age ranges for segmentation
 
-- **risk_segment** *(if used)*  
+- **risk_segment** **  
   → Derived using behavioral and financial indicators to classify customers into risk categories
 
 ---
