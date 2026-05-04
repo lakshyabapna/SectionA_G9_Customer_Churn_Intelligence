@@ -11,7 +11,7 @@
 |--------------|---------------------------------|
 | **Title**    | DVA Capstone G9 — Dashboard 2   |
 | **Platform** | Tableau Public                  |
-| **Status**   | Published ✅                    |
+| **Status**   | Published                       |
 
 ### 🔗 Live Dashboard Link
 
